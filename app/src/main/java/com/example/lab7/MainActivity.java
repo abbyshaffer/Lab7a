@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
         broadcastIntent.putExtra("toastMessage",message);
         PendingIntent actionIntent = PendingIntent.getBroadcast(this, 0, broadcastIntent,PendingIntent.FLAG_UPDATE_CURRENT);
 
-        Log.i("MAIN","main: " + message);
-
         Notification notification = new NotificationCompat.Builder(this,CHANNEL_1_ID)
                 .setSmallIcon(R.drawable.ic_baseline_message_24)
                 .setContentTitle(title)
