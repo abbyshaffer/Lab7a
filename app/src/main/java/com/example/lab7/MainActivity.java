@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         notificationManager = NotificationManagerCompat.from(this);
-       // System.out.println("TEST1");
-        //Notification.Builder builder = new NotificationCompat.Builder(this, CHANNEL_1_ID
     }
     public void sendOnChannel1(View v){
         editTextTitle = (EditText) findViewById(R.id.editTextTitle);
